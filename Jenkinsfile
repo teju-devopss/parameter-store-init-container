@@ -7,12 +7,12 @@ pipeline {
   stages {
     stage('Docker build') {
      steps {
-       sh 'docker build -t docker.io/tejaswinidockerhub/init-container-parameters-image .'
+       sh 'docker build -t docker.io/tejaswinidockerhub/init-awscontainer-parameters-image .'
        }
      }
     stage('Docker push') {
       steps {
-        sh 'docker push docker.io/tejaswinidockerhub/init-container-parameters-image'
+        sh 'docker push docker.io/tejaswinidockerhub/init-awscontainer-parameters-image'
       }
     }
   }
