@@ -1,5 +1,3 @@
-#!/bin/bash
-
 set -x
 for param in $PARAMS ; do
   PARAM=$(echo $param | awk -F , '{print $1}')
